@@ -14,7 +14,23 @@ A command line is a text-based interface (CLI) or terminal window (point of inte
 
 ## Command
 A command is a specific instruction that you type into a CLI or terminal to tell the computer to consuct a certain action. They are typically short and used to interact directly with the system. A command using Gobuster would follow this layout:
+
 Gobuster -u insertwebsite.co.uk -w wordlist.txt dir 
-The -u specifies the URL that you want to scan. 
+
+The -u specifies the URL that you want to scan.
+
 The -w tells Gobuster to use the wordlist file (wordlist.txt)
+
 The dir specifies the type of scan to perform, so in this case dir stands for directories.
+
+## What happens next?
+With the output you will see that Gobuster scans the website with each word in the list, findinf potential pages which may exist linked with the site. It will tell you pages in the list of page/directory names and this will be indicated by status:200 as previously mentioned. For example /bank-transfer (status:200)
+
+This can then be typed into the the url bar, depending on the page, the hacker may have found vulnerabilities in the application. As an ethical hacker, it is my job to report this. 
+
+## Potential careers
+Penetration tester - testing tech products for exploitable security vulnerabilities
+
+Red teamer - attacking an organisation (with permission) and providing feedback from an enemy perspective 
+
+Security engineer - designing, monitoring and maintaining security controls. 
