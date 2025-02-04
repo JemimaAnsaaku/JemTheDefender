@@ -28,6 +28,9 @@ With the output you will see that Gobuster scans the website with each word in t
 
 This can then be typed into the the url bar, depending on the page, the hacker may have found vulnerabilities in the application. As an ethical hacker, it is my job to report this. 
 
+## Outcome
+Using the secure fake bank application on TryHacker, I was able to ethically hack into an unsecured hidden directory within the fake application and transfer $2000 from a customer's account number into my own.
+
 ## Potential careers
 Penetration tester - testing tech products for exploitable security vulnerabilities
 
