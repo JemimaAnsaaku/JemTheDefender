@@ -10,4 +10,4 @@ Here I opened the terminal within TryHackMe's virtual machine (VM) or mock deskt
 ## Step 2 - GoBuster
 Then i ran Gobuster through the terminal to determine whether the target site (in this case the fictious website FakeBank) had any hidden admin pages. 
 
-To do this I input the following command 
+To do this I input the following command
