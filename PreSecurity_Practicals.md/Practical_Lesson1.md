@@ -19,4 +19,9 @@ The output shows directories with their status code and other details. Here I am
 ![Gobuster output](https://github.com/JemimaAnsaaku/JemTheDefender/blob/main/Images/Screenshot%202025-02-06%20at%2014.40.46.png?raw=true)
 
 ## Step 4 - Accessing hidden page
-After running Gobuster I navigated to the address in my browser which allowed me to access the hidden bank transfer page, which allowed me to transfer a sum of money from a random bank account to my own 
+After running Gobuster I navigated to the address in my browser which allowed me to access the hidden bank transfer page, which allowed me to transfer a sum of money from a random bank account to my own.
+
+![Hidden page](https://github.com/JemimaAnsaaku/JemTheDefender/blob/main/Images/Screenshot%202025-02-06%20at%2014.51.20.png?raw=true)
+
+# Conclusion
+This exercise taught me how Gobuster can be used as a command-line application to discover hidden directories on a target site. The consequences of this is colossal and it demonstrates the importance of securing sensitive web endpoints. 
