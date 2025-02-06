@@ -16,3 +16,7 @@ To do this I input the following command
 
 ## Step 3 - Analysing output
 The output shows directories with their status code and other details. Here I am interested specifically in bank-transfer as it indicates an accessible page which is likely to contain information that is valuable to a hacker. I am not interested in investigating the image directory as images are likely to not contain information that is beneficial to a hacker. 
+![Gobuster output](https://github.com/JemimaAnsaaku/JemTheDefender/blob/main/Images/Screenshot%202025-02-06%20at%2014.40.46.png?raw=true)
+
+## Step 4 - Accessing hidden page
+After running Gobuster I navigated to the address in my browser which allowed me to access the hidden bank transfer page, which allowed me to transfer a sum of money from a random bank account to my own 
