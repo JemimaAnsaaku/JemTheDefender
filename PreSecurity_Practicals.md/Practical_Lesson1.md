@@ -11,3 +11,8 @@ Here I opened the terminal within TryHackMe's virtual machine (VM) or mock deskt
 Then i ran Gobuster through the terminal to determine whether the target site (in this case the fictious website FakeBank) had any hidden admin pages. 
 
 To do this I input the following command
+![Gobuster input command](https://github.com/JemimaAnsaaku/JemTheDefender/blob/main/Images/Gobuster%20command.png?raw=true)
+- here -u represents the url, followed by the target website, -w wordlist.txt represents the wordlist (a textfile) that will deposit words that will be used for bruteforce and dir represents that in the command I am requesting to find directories.
+
+## Step 3 - Analysing output
+The output shows directories with their status code and other details. Here I am interested specifically in bank-transfer as it indicates an accessible page which is likely to contain information that is valuable to a hacker. I am not interested in investigating the image directory as images are likely to not contain information that is beneficial to a hacker. 
