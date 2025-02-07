@@ -139,4 +139,6 @@ So, when you send data, the Presentation Layer translates it into a format that 
 Security features such as HTTPS occur at this layer
 
 ## Application
-This is the layer we are all most familiar with. It is the layer in which protocols and rules are in place to determine how the user should interact with data sent or received. Everyday applications such as email clients (outlook microsoft gmail) and browsersprovide a friendly Graphical User Interface (GUI) for users to interact with data sent or recieved. Other protocols include a DNS (domain name system), which is how websites are translated in IP
+This is the layer we are all most familiar with. It is the layer in which protocols and rules are in place to determine how the user should interact with data sent or received. Everyday applications such as email clients (outlook microsoft gmail) and browsersprovide a friendly Graphical User Interface (GUI) for users to interact with data sent or recieved. 
+
+DNS (Domain Name System), This is how website addresses are translated into IP addresses. 
