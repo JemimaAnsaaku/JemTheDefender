@@ -83,3 +83,22 @@ PPP - this technology is used by PPTP to allow for authentication and provide en
 
 IPSec - Internet protocol security (IPSec) encrypts data using the existing IP framework. it is difficult to set up in comparison to others, however if successful it boasts strong encryption, and is also supported on many devices 
 
+## What is a router?
+It is a routers job to connect networks and pass data between them. 
+
+routing - the label given to the process of data travelling across networks. routing involves creating a path between different networks so they can be successfully delivered. routers operate at layer 3 (networking) of the osi model. they often feature an interactive interface (such as a website or a console) that allows an administrator to configure various rules such as port forwarding or firewalling. 
+
+routing is useful when devices are connected by many paths. 
+
+routers are dedicated devices and do not perform the same functions as switches. 
+
+Different protocols decide what path should be taken for data to travel across routers. 
+
+## What is a switch?
+a dedicated networking device responsible for providing a means of connecting to multiple devices. switches can facilitate many devices (from 3 to 63) using ethernet cables. 
+
+switches can operate at both layer 2 (datalink) and layer 3 (networking) of the OSI model. However, these are exclusive in the sense that layer 2 switches cannot operate at layer 3. 
+
+Layer 2 switches will forward frames (remember at layer 2 ip protocols from data are stripped) onto the connected devices using their MAC address. These switches are solely responsible for sending frames to the correct device.
+
+A layer 3 switch uses a technology called the Virutal Local Area Ntwork (VLAN) which allows devices within a network to be virtually split ip. This means they can all benefit from things such as the internet connection but are treated seperately. This network seperation provides security because it means that rules in place determine how specific devices communicate with each other. devices connected to a layer 3 switch but have seperate VLAN (1,2,3, etc) may not be able to communicate with each other although they are connected to the same switch. 
