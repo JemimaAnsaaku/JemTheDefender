@@ -279,3 +279,44 @@ Maintenance and Collaboration: Clear, well-punctuated code is easier to maintain
 | **Pipe (|) and Ampersand (&)**  | Used for bitwise operations or logical OR/AND.                             | Performs bitwise OR (`|`) and AND (`&`) operations.                   | **Logical errors**: Misuse causes incorrect results in logical operations. | `if (x & y)` (bitwise AND)                                           | The **ampersand (`&`)** and **pipe (`|`)** are used for bitwise AND and OR operations, respectively. Using these incorrectly can lead to wrong outcomes in logical tests. |
 | **Double and Single Quotes ("", '')** | Defines characters and strings in most languages.                      | Single quotes define characters (`'A'`), double quotes define strings (`"Hello"`). | **Type errors**: Mixing character and string quotes can cause issues. | `'A'` (character)<br> `"Hello"` (string)                              | **Single (`'`) and double (`"`) quotes** are used for strings. In some languages, single quotes denote characters (e.g., `'A'`), and double quotes are for strings (e.g., `"Hello"`). |
 
+## Other coding laws
+
+1. DRY Principle (Don't Repeat Yourself)
+What it is: Avoid duplication of code. If you find yourself writing the same code more than once, consider creating a function or class to handle it.
+
+Why it matters: Reduces redundancy and keeps your codebase cleaner. Easier to maintain and less prone to errors. Call function instead of repeating the formula. 
+
+2. KISS Principle (Keep It Simple, Stupid)
+
+What it is: Simplicity should be a key goal in design and implementation. Avoid complex solutions when simple ones are available.
+
+Why it matters: Simpler code is easier to understand, debug, and maintain. Over-complicating your solutions can lead to problems down the line.
+
+3. YAGNI Principle (You Aren't Gonna Need It)
+
+What it is: Don’t add functionality until it’s absolutely necessary. Focus on the immediate requirements rather than adding extra features prematurely.
+
+Why it matters: Avoids over-engineering and keeps the codebase lean. Focusing on current needs reduces waste and unnecessary complexity.
+
+4. Code Readability
+
+What it is: Write your code so that others (or even future you) can easily read, understand, and modify it.
+
+Why it matters: Clean, readable code makes collaboration easier, ensures that others can contribute, and helps debugging or expanding the code later on.
+
+Key Guidelines:
+
+Use meaningful variable names.
+
+Keep your code well-organized with consistent indentation and spacing.
+
+Write clear comments where necessary.
+
+Use self-explanatory functions and methods.
+
+5. Modularity
+
+What it is: Break your code into small, reusable units (functions, classes, or modules).
+
+Why it matters: Helps maintain a clean and organized structure, making it easier to test, update, and reuse parts of your code.
+
