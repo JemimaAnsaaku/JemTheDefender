@@ -320,3 +320,44 @@ What it is: Break your code into small, reusable units (functions, classes, or m
 
 Why it matters: Helps maintain a clean and organized structure, making it easier to test, update, and reuse parts of your code.
 
+6. Error Handling and Exceptions
+
+What it is: Use try/except (or equivalent) to catch and handle errors, instead of letting your program crash.
+
+Why it matters: Ensures your program can fail gracefully, providing users with helpful error messages instead of just breaking down.
+
+7. Separation of Concerns
+
+What it is: Different parts of your program should have distinct responsibilities. For example, separating the logic for processing data from the logic for displaying results.
+
+Why it matters: This keeps your code clean and easier to maintain. Changes in one area won’t affect unrelated parts of the code.
+
+8. Version Control (e.g., Git)
+
+What it is: Track changes to your code using a version control system (such as Git).
+
+Why it matters: Enables collaboration, lets you roll back changes, and keeps track of the history of your codebase.
+
+Key commands:
+
+git init: Initialize a new Git repository.
+
+git add .: Add all changes to the staging area.
+
+git commit -m "message": Commit changes with a descriptive message.
+
+git push: Push changes to a remote repository.
+
+9. Test-Driven Development (TDD)
+
+What it is: Write tests for your code before you actually write the code. This encourages you to think about your code’s behavior.
+
+Why it matters: Helps ensure your code works correctly, makes debugging easier, and provides a safeguard against breaking existing functionality.
+
+10. Avoid Hardcoding Values
+
+What it is: Don’t write values directly into your code (i.e., avoid “magic numbers”). Instead, use variables or constants.
+
+Why it matters: This improves flexibility and makes it easier to modify your program later on without having to change hardcoded values everywhere.
+
+
