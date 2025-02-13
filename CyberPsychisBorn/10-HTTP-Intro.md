@@ -204,4 +204,25 @@ I have previously learned about how when a server reponds, the first line is alw
 
 200 - 299 = success  - this range of status codes is used to tell the client that their request was successful
 
-300 - 399
+300 - 399 = redirection - these are used to reditect the clients request to another resoucr. this can be wither to a different webpage or different websitee.
+
+400-499 = client errors - used to inform the client that there was an error with their request.
+
+500-599 =server errors - errors happening on server side and usually indicate a major problem with the server handling request. 
+
+specific common codes 
+
+| HTTP code | definition |
+|------------|-------------|
+|200 | OK	The request was completed successfully.|
+|201 | Created	A resource has been created (for example a new user or new blog post).|
+|301 | Moved Permanently	This redirects the client's browser to a new webpage or tells search engines that the page has moved somewhere else and to look there instead.|
+|302 |Found	Similar to the above permanent redirect, but as the name suggests, this is only a temporary change and it may change again in the near future.|
+|400 | Bad Request	This tells the browser that something was either wrong or missing in their request. This could sometimes be used if the web server resource that is being requested expected a certain parameter that the client didn't send.|
+|401 | Not Authorised	You are not currently allowed to view this resource until you have authorised with the web application, most commonly with a username and password.|
+|403 | Forbidden	You do not have permission to view this resource whether you are logged in or not|
+|405 | Method Not Allowed	The resource does not allow this method request, for example, you send a GET request to the resource /create-account when it was expecting a POST request instead |
+|404 | Page Not Found	The page/resource you requested does not exist.|
+|500 |Internal Service Error	The server has encountered some kind of error with your request that it doesn't know how to handle properly |
+|503 | Service Unavailable	
+This server cannot handle your request as it's either overloaded or down for maintenance.|
