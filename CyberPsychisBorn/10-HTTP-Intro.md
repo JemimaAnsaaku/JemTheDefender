@@ -224,5 +224,66 @@ specific common codes
 |405 | Method Not Allowed	The resource does not allow this method request, for example, you send a GET request to the resource /create-account when it was expecting a POST request instead |
 |404 | Page Not Found	The page/resource you requested does not exist.|
 |500 |Internal Service Error	The server has encountered some kind of error with your request that it doesn't know how to handle properly |
-|503 | Service Unavailable	
-This server cannot handle your request as it's either overloaded or down for maintenance.|
+|503 | Service Unavailable	This server cannot handle your request as it's either overloaded or down for maintenance.|
+
+## Headers
+
+Headers are additional bits of data you can send to a web server when making requests. Although they are not strictly required when making a http request, youll find it difficult to view a website properly. 
+
+Headers are sent from the client (usually your browser) to the server 
+
+### Host
+
+Some web serverss host multiple websites by providing the host headers so by providing the host headers you can tell it which one we require. Otherwise you will just recieve the default website from the server. 
+
+### User-Agent 
+
+This is your browser software and version number. telling the webserver your browser software helps it format the website properly for your browser and also some elements of html (skeleton structure: headings, paragraphs images, buttons, links etc), javascript (interactivity and functionality - animations, pop ups, buttons, dynamic updates, etc) and css (cascading style sheets: design and styling - fonts colours and layout) are only available in certain browswers.
+
+### Content length 
+
+When sending  data to a web server such as in a form, the content length tells the web server how much data to expect in the web request. This way the server can ensure it isnt missing any data. 
+
+### Accept-encoding 
+
+tells the web server what types of compression methods the browser supports so the data can be made smaller for transmitting over the internet 
+
+## Cookie
+
+Data sent to the server to help remember your information 
+
+## Common response headers 
+
+headers that are returned from the web server to the client after a request
+
+### set-cookie 
+
+- information to store which gets sent back to the web server on each request 
+
+### cache-control
+
+How long to store the content of the response in the browsers cache before it requests it again 
+
+### content-type 
+
+- tells the client what kind of data is being returned i.e., html, css, javascript, images, etc. Using the content-type header the browser then knows how to process the data 
+
+### content-encoding
+
+- what method has been used to compress the data to make it smaller when sending over the internet 
+
+## cookies 
+
+small pieces of data that websires store on my browser to remember things about me. comapnies do this to:
+
+remember me - ie keep me logged in 
+
+track preferences - like dark mode or language preferences 
+
+for analytics - track visitors and improve their site 
+
+ads and tracking - show me relevant ads based on my browsing history
+
+because http is stateless (does not keep track of previous requests) cookies can be used to remind a web server of who you are, some personal settings for the website or whether you have been to the website before 
+
+The cookie wont typically be a clear-text string where you can see the password, but a token
