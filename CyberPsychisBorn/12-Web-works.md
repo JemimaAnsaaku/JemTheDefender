@@ -55,6 +55,7 @@ Examples of Dynamic Content:
 - A shopping cart (unique items per user)
 - Search results (change based on what you type)
 
+These changes to what you end up seeing are being done in what is called the BACKEND with the use of programming and scripting languages. it is called backend because what is being done is all done behing the scenes. you cant view the website's html source and see everything happening in the backend, while the html is the result of processing FROM the back end. Everything you see from the browser is front end. 
 ### Databases
 
 often websites will need a way of storing information for their users. webservers can communicate with databases to store and recall data from them. databases can range from just a simple plain text file up to complex clusters of multiple servers providing speed and resilience. I will come across some common databses MySQL, MSSQL, MongoDB, Postgres and more - each with a specific feature.
@@ -65,7 +66,70 @@ a WAF sits between your web request and the web server, its primary purpose is t
 
 ## What is a webserver
 
-A webserver is a software that listens for incoming connections and then utilises the http protocol to deliver web content to its clients. the most common seb server softwares i will come across is apache, IIS, nginx and nodeJS. A web server delivers files from what is called its root directory, which is defined in the software settings. for example, nginx and apache share the same default location of var/www/html
+A webserver is a software that listens for incoming connections and then utilises the http protocol to deliver web content to its clients. the most common seb server softwares i will come across is apache, IIS, nginx and nodeJS. A web server delivers files from what is called its root directory, which is defined in the software settings. for example, nginx and apache share the same default location of /var/www/html in Linux operating systems, and IIS uses C:\inetpub\wwwroot for the Windows operating systems. So, for example, if you requested the file http://www.example.com/picture.jpg, it would send the file /var/www/html/picture.jpg from its local hard drive.
+
+### virtual hosts 
+
+web severs can host multiple websites with different domain names, to achieve this, they use virtual hosts. the web server software checks the hostname being requested from the http being requested from the http headers and matches that against its virtual hosts (vitrual hosts are just text-based configuration files). if it finds a match, the correct website will be provided. if no match is found, the default website will be provided instead. 
+
+virtual hosts can have their root directory mapped onto different locations upon the hard drive. for example, one.com being mapped to /var/www/website_one, and two.com being mapped to /var/www/website_two. 
+
+there is no limit to the number of different websites you can host on a web server. 
+
+### scripting and backend languages 
+
+#### Frontend (Client-Side):
+
+What is it?
+
+The frontend refers to everything that users interact with directly on a website. It includes the design, layout, and content of the page.
+
+Technologies Involved:
+
+HTML – To structure the content (like paragraphs, headings, links).
+
+CSS – To style the content (like colors, fonts, layout).
+
+JavaScript – To make the page interactive (like form validation, animations, and event handling).
+
+#### Where is it used?
+
+The frontend runs in the user’s browser (like Chrome, Firefox, etc.). Everything you see and interact with directly (like buttons, menus, forms) is part of the frontend.
+
+Example of Frontend Tasks:
+
+Displaying text and images.
+
+Animating transitions.
+
+Showing or hiding elements when you click a button.
+
+#### Backend (Server-Side):
+
+What is it?
+
+The backend is everything that happens on the server, behind the scenes. It's where the logic, data management, and database interactions happen. The backend doesn't interact directly with the user but supports the frontend by sending data, processing user inputs, and making decisions.
+
+Technologies Involved:
+
+Programming Languages – PHP, Python, Ruby, Node.js, Perl, etc. These are used to handle the logic of the website.
+
+Databases – SQL, MongoDB, etc., for storing and retrieving data.
+
+Servers – Like Apache or Nginx to serve web pages.
+
+Where is it used?
+
+The backend runs on a server (not on the user’s computer). When you request a page, the frontend asks the backend for data, and the backend sends it back to be displayed by the frontend.
+
+Example of Backend Tasks:
+
+Processing form submissions (like a contact form).
+
+Handling user authentication (like login or registration).
+
+Interacting with a database to store or retrieve data (e.g., showing a list of products from a database).
+
 
 
 
